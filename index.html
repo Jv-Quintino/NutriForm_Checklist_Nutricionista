@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NutriForm - Checklist de Boas Práticas</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.31/jspdf.plugin.autotable.min.js"></script>
+</head>
+
+<body>
+
+<div id="login" class="login-box">
+  <img src="logo.png" alt="Logo" class="logo">
+  <h2>NutriForm - Checklist Nutricionista</h2>
+  <input type="password" id="senha" placeholder="Digite a senha">
+  <button onclick="verificarLogin()">Entrar</button>
+</div>
+
+<div class="container" id="sistema" style="display:none;">
+
+    <div class="topo">
+  <img src="logo.png" alt="Logo" class="logo">
+  <h1>NutriForm - Checklist de Boas Práticas</h1>
+</div>
+
+<div class="header">
+  <span id="data"></span>
+</div>
+
+<div class="info-extra">
+  <input type="text" id="empresa" placeholder="Nome da empresa">
+  <input type="text" id="setor" placeholder="Setor (ex: Cozinha)">
+</div>
+
+<div id="form"></div>
+
+<div class="acoes">
+  <button onclick="calcular()">Calcular</button>
+  <button onclick="gerarPDF()">PDF</button>
+</div>
+
+<div id="resultado" class="resultado-box"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
