@@ -371,7 +371,7 @@ doc.text("Consultora Quality", 115, y);
 function verificarLogin() {
   const senha = document.getElementById("senha").value;
 
-  if (senha === "nutriform050526") { //
+  if (senha === "nutriformnovoprojeto2026") { //
     document.getElementById("login").style.display = "none";
     document.getElementById("sistema").style.display = "block";
   } else {
